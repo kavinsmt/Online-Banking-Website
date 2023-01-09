@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Opening</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+  
+      #head2{
+        text-align: center;
+        background-color:rgb(243, 245, 245);
+      }
+      .ac_opening{
+        border-style: groove;
+      }
+      tr td span{
+        color: red;
+      }
+    </style>
+</head>
+<body>
+  <div class="container">
+  <!-- nav bar -->
+ <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="about us.html">Madras Indian Bank</a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="home.html">Home</a>
+      </li>
+     <li class="nav-item">
+        <a class="nav-link" href="login.html">Log In</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="mailto:mib@gmail.com">contact</a>
+      </li>
+      <li>
+        <a class="nav-link " href="fastag.html">Fastag</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="loan repayment.html">Loan repayment</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+ 
+  <h2 id="head2" >Account Opening Form</h2>
+
+  <form class="ac_opening" action="" method="post">
+
+    <table cellpadding="8" cellspacing="3">
+
+      <div>
+        <tr>
+          <td><label for="firstname">FirstName</label></td>
+          <td><input type="text"  name="firstname" id="firsname" required></td>
+        </tr> 
+      </div>
+      
+      <div>
+        <tr>
+          <td><label for="name">LastName</label></td>
+          <td><input type="text" name="lastname" id="lastname" required></td>
+        </tr> 
+      </div>
+        
+      <div>
+        <tr>
+          <td><label for="Dob">Dob</label></td>
+          <td><input type="date" name="Dob" id="Dob" required></td>
+          <td><span id="ageMsg"></span></td>
+        </tr>
+      </div>
+        
+      <div>
+        <tr>
+          <td><label for="gender">Gender </label></td> 
+ 
+          <td><input type="radio" name="gender" id="gender" value="Male">
+          <label for="gender">Male</label>
+ 
+          <input type="radio" name="gender" id="gender" value="Female">
+          <label for="gender">Female</label>
+ 
+          <input type="radio" name="gender" id="gender" value="Others">
+          <label for="gender">Others</label></td> 
+        </tr> 
+      </div>
+        
+      <div>
+        <tr>
+          <td><label for="mobile">Mobile number</label></td>
+          <td><input type="number" id="mob" name="mob" required/></td>
+          <td><span id="mobMsg"></span></td>
+        </tr> 
+      </div>
+        
+      <div>
+        <tr>
+          <td><label for="email">Email Id</label></td>
+          <td><input type="email" name="email" id="email" required></td>
+          <td><span id="emailResult"></span></td>
+        </tr> 
+      </div>
+        
+      <div>
+        <tr>
+          <td><label for="fathername">Father's Name</label></td>
+          <td><input type="text" name="fathername" id="fathername" required></td>
+        </tr> 
+      </div>
+        
+      <div>
+        <tr>
+          <td><label for="Address">Address</label></td>
+          <td><textarea name="Address" id="Address" cols="30" rows="10" required></textarea></td>
+        </tr> 
+      </div>
+        
+      <div>
+        <tr>
+          <td><label for="occupation">Occupation </label></td>
+  
+          <td><input type="radio" name="occupation" id="occupation" value="proffesional">
+          <label for="occupation">Proffesional</label>
+  
+          <input type="radio" name="occupation" id="occupation" value="Buainess">
+          <label for="occupation">Business</label>
+  
+          <input type="radio" name="occupation" id="occupation" value="student">
+          <label for="occupation">Student</label>
+  
+          <input type="radio" name="occupation" id="occupation">
+          <label for="occupation">Others</label></td>
+        </tr>
+      </div>
+  
+      <div>
+        <tr>
+          <td><label for="state">Select your State</label></td>
+          <td><select name="state" id="state"> 
+            <option value="Tamilnaadu">Tamilnadu</option>
+            <option value="Kerala">Kerala</option>
+            <option value="karnataka">karnataka</option>
+            <option value="pondicherry">Pondicherry</option>
+            <option value="others">others</option>
+          </select></td>
+        </tr> 
+      </div>
+        
+      <div>
+        <tr>
+          <td><label for="pan">Pan card Number </label></td>
+          <td><input type="text" name="pan" id="pan" maxlength="10" required></td>
+          <td><span id="panResult"></span></td>
+        </tr> 
+      </div>
+        
+      <div>
+        <tr>
+          <td><label for="aadhar">Aadhar Number </label></td>
+          <td><input type="text" name="aadhar" id="aadhar" minlength="14" maxlength="14" required placeholder="Ex: 2345 5678 9012"></td>
+          <td><span id="aadharMsg"></span></td>
+        </tr> 
+      </div>
+        
+      <div>
+        <tr>
+          <td><label for="typrofa/c">Prefered A/C </label></td>
+  
+          <td><input type="radio" name="typeofa/c" id="typeofa/c" value="Sacings A/c">
+          <label for="typeofa/c">Savings A/C</label>
+            
+          <input type="radio" name="typeofa/c" id="typeofa/c" value="Current A/C">
+          <label for="typeofa/c">Current A/C</label>
+            
+          <input type="radio" name="typeofa/c" id="typeofa/c" value="OD A/C">
+          <label for="typeofA/c">OD A/C</label></td> 
+        </tr> 
+      </div>
+        
+      <div>
+        <tr>
+          <td><label for="preferedbranch">Prefered Branch</label></td> 
+          <td><select name="preferedbranch" id="preferedbranch">
+              <option value="Chennai">Chennai</option>
+              <option value="Salem">Salem</option>
+              <option value="coiambatore">coiambatore</option>
+              <option value="Madurai">Madurai</option>
+              <option value="pondicherry">Pondicherry</option>
+              <option value="Bangalore">Bangalore</option>
+              <option value="Hubli">Hubli</option>
+              <option value="Kochin">Kochin</option>
+              <option value="Palakkad">Palakkad</option>
+          </select></td>
+        </tr> 
+      </div>
+        
+      <div>
+        <tr>
+          <td><label for="photo">Upload your photo</label></td>
+          <td><input type="file" name="photo" id="photo" required></td>
+        </tr> 
+      </div>
+
+      <div>
+        <tr>
+          <td><label for="documents">Upload your Pan card and Aadhar card</label></td>
+          <td><input type="file" name="documents" id="documents" required></td>
+        </tr> 
+      </div>
+        
+      <div>
+        <tr>
+          <td colspan="2"><input type="checkbox" name="terms&condition" id="terms&condition">
+          <label for="terms&condition">I agree all terms and condition</label></td>
+        </tr> 
+      </div>
+
+    <div>
+     <tr>
+      <td><button type="button" class="btn btn-primary" onclick="regSubmit()">Submit</button></td>
+     <td><button type="reset" class="btn btn-secondary" >Reset</button></td>
+    </tr> 
+  </div>
+
+  </table>
+</form>
+</div>
+</div>
+
+<script src="form.js"></script>
+</body>
+</html>

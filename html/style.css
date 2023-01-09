@@ -1,0 +1,43 @@
+body{ 
+    padding-top: 100px;
+    /* background-image: url(media/bank3.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    font-size: 38px;
+}
+a{
+    text-decoration: none;
+}
+
+.loanrepay_table{
+    border-style: groove;
+    border-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 20px;
+    border-width: 3px; 
+    background-color: whitesmoke;
+} 
+
+/*----------------------- nav bar --------------------------------*/
+.navbar-brand{
+    font-size: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+nav ul li{
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px;
+    transform:skew(-7deg)
+}
+nav ul li:hover{
+    border-bottom: 2px solid white;
+    transition: .1s;
+}
+nav ul li a{
+    text-transform: uppercase;
+}
